@@ -5,8 +5,14 @@
   "main": "index.js",
   "scripts": {
     "dev:start": " nodemon --exec babel-node src/index.js",
-    "test": "",
-    "build": "babel src --out-dir dist"
+    "test": "cross-env NODE_ENV=test c8 --check-coverage mocha src/**/tests/*.test.js --timeout 20000 --exit",
+    "coverage": "cross-env NODE_ENV=test c8 --check-coverage -r lcov npm t",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "lint": "eslint \"**/*.js\" --fix --max-warnings=0",
+    "format": "prettier --write ./**/*.{js,jsx,json}",
+    "lint-fix": "eslint \"**/*.js\" --fix",
+    "createsuperuser": "node ./src/utils/superuser.js"
   },
   "repository": {
     "type": "git",
@@ -34,6 +40,9 @@
   },
   "dependencies": {
     "@babel/node": "^7.17.10",
-    "dotenv": "^16.0.1"
+    "c8": "^7.11.3",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.1",
+    "mocha": "^10.0.0"
   }
 }
