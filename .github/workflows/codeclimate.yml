@@ -56,4 +56,4 @@ jobs:
       - name: Publish to codeclimate
         uses: paambaati/codeclimate-action@v2.5.7
         env:
-          CC_TEST_REPORTER_ID: ${{ secrets.CC_REPORTER_ID}}
+          CC_TEST_REPORTER_ID: 0dea11578ee36a57830609b225714c0e97c2107fdc3552b016a1dd1dba61314a
