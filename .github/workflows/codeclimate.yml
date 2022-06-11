@@ -47,8 +47,6 @@ jobs:
           node-version: "16.x"
       - name: Install all dependencies
         run: npm install
-      - name: Check linting errors
-        run: npm run lint
       - name: Run tests and generate coverage reports
         run: npm run coverage
       - name: Sending coveralls report
