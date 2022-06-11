@@ -9,9 +9,7 @@
     "coverage": "cross-env NODE_ENV=test c8 --check-coverage -r lcov npm t",
     "start": "node src/app.js",
     "dev": "nodemon src/app.js",
-    "lint": "eslint \"**/*.js\" --fix --max-warnings=0",
     "format": "prettier --write ./**/*.{js,jsx,json}",
-    "lint-fix": "eslint \"**/*.js\" --fix",
     "createsuperuser": "node ./src/utils/superuser.js"
   },
   "repository": {
