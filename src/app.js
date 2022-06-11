@@ -1,7 +1,7 @@
 import express from 'express'
 import morgan from "morgan";
 import swaggerUi from "swagger-ui-express";
-import swaggerDoc from "./data.json";
+import swaggerDoc from "./data.json" assert {type: "json"};
 import cors from "cors";
 
 const server=express();
