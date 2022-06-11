@@ -1,5 +1,5 @@
 {
-  "name": "phantom-be-dream-team",
+  "name": "arthur",
   "type": "module",
   "version": "1.0.0",
   "description": "",
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atlp-rwanda/phantom-be-dream-team.git"
+    "url": "git+https://github.com/arthurjunior250/github-workflow-backend"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/atlp-rwanda/phantom-be-dream-team/issues"
+    "url": "https://github.com/arthurjunior250/github-workflow-backend/issues"
   },
-  "homepage": "https://github.com/atlp-rwanda/phantom-be-dream-team#readme",
+  "homepage": "https://github.com/arthurjunior250/github-workflow-backend#readme",
   "devDependencies": {
     "@babel/cli": "^7.17.10",
     "@babel/core": "^7.18.2",
